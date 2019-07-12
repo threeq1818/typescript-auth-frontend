@@ -1,7 +1,7 @@
 // authentication.ts
 
 import axios, { AxiosError } from 'axios';
-import jwt_decode from '@types/jwt-decode';
+import jwt_decode from 'jwt-decode';
 
 import { GET_ERRORS, SET_CURRENT_USER } from './types';
 import setAuthToken from '../setAuthToken';
@@ -19,7 +19,7 @@ interface IToken {
 
 export const registerUser = (user: IUser, history: any) => (dispatch: any) => {
     axios.post<IUser>('/api/users/register', user)
-        .then((res: Object) => {
+        .then((res) => {
             history.push('/login')
         })
         .catch((err) => {

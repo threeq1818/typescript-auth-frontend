@@ -1,9 +1,0 @@
-// types.tsx
-
-export const GET_ERRORS = 'GET_ERRORS';
-export const SET_CURRENT_USER = 'SET_CURRENT_USER';
-
-export const CREATE_CHARACTER = 'CREATE_CHARACTER';
-export const READ_CHARACTER = 'READ_CHARACTER';
-export const UPDATE_CHARACTER = 'UPDATE_CHARACTER';
-export const DELETE_CHARACTER = 'DELETE_CHARACTER';
