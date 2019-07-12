@@ -8,5 +8,5 @@ import characterReducer from './characterReducer';
 export default combineReducers({
     errors: errorReducer,
     auth: authReducer,
-    character: characterReducer
+    // character: characterReducer
 });

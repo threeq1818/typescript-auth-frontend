@@ -3,15 +3,8 @@
 import axios, { AxiosError } from 'axios';
 import jwt_decode from 'jwt-decode';
 
-import { GET_ERRORS, SET_CURRENT_USER } from './types';
+import { IUser, GET_ERRORS, SET_CURRENT_USER, UserActionType } from './types';
 import setAuthToken from '../setAuthToken';
-
-interface IUser {
-    name: string,
-    email: string,
-    password: string,
-    password_confirm: string
-}
 
 interface IToken {
     token: string
